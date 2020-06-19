@@ -96,6 +96,26 @@ $query_sp_admin = "INSERT INTO `users` (`user_id`, `user`, `pass`, `first`, `las
 if (!mysqli_query($conn,$query_sp_admin)) { echo("SQL Error description: " . mysqli_error($conn)); }
 else{	echo "<p>Success. Simple PHP Blog Admin Created.</p>";}
 
+$myfile = fopen("admin/config.php", "w") or die("Unable to open file!");
+$txt = '<?php
+//Store log in infor into variables
+		$servername = "'.$servername.'";
+		$serveruser = "'.$serveruser.'";
+		$serverpassword = "'.$serverpassword.'";
+		$serverdatabase = "simplephpblog";
+
+		// Create connection
+		$conn = mysqli_connect( $servername, $serveruser, $serverpassword, $serverdatabase );
+		
+		// Display error message if fails;
+		if ( !$conn ) {echo "Connection Fail" . mysqli_connect_error();}
+
+//End  connection
+?>
+';
+fwrite($myfile, $txt);
+fclose($myfile);
+echo "<p>Success. Simple PHP Blog Config.php file created.</p>";
 }
 exit;
 }
