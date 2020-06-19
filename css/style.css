@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* CSS Document */
+* { 
+	box-sizing: border-box; 
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin:0;
+	padding: 0;
+	font-family: Arial;
+}
+
+body {
+	background-color: rgba(192, 178, 129, .3);
+}
+/* Clear floats */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the header */
+.header {
+		background-color: #D0D0D0;
+		padding: 0;
+  text-align: center;
+	 color: #5A4A42;
+		font-family: 'Rock Salt', cursive;
+		font-size: .8em;
+}
+.header h1{
+	margin: auto;
+	font-family: 'Rock Salt', cursive;
+	line-height: 100px;
+}
+.navbar {
+	display: block;
+	height: 50px;
+	background-color: white;
+	cursor: pointer;
+	overflow: hidden;
+	text-transform: uppercase;	
+}
+.nav-icon a{
+	display: none;
+	float: left;
+	line-height: 50px;
+	padding: 0px 15px;
+	text-decoration: none;
+	color: #5D6C89;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+.nav-icon i{
+	vertical-align: middle;
+	font-size: 30px;
+}
+.nav-left a{
+	float: left;
+	line-height: 50px;
+	padding: 0px 30px;
+	text-decoration: none;
+	color: #5D6C89;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+.nav-right a{
+	float: right;
+	line-height: 50px;
+	padding: 0px 30px;
+	text-decoration: none;
+	color: #5D6C89;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+.welcome {
+	float: right;
+	line-height: 50px;
+	padding: 0px 5px;
+	text-decoration: none;
+	color: #5D6C89;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+.welcome i{
+vertical-align: text-bottom;
+font-size: 20px;
+}
+.nav-icon a:hover{
+	background-color: #D0D0D0;
+	color: black;
+}
+.nav-left a:hover{
+	background-color: #D0D0D0;
+	color: black;
+}
+.nav-right a:hover{
+	background-color: #D0D0D0;
+	color: black;
+}
+/* Create a main container */
+.main {
+  width: 80%;
+		margin:10px auto;
+}
+
+.left-side{  
+		float: left;
+  width: 75%;
+}
+.right-side{
+		float: left;
+  width: 25%;
+}
+.card{
+	margin: 5px;
+	background-color:none; 
+	}
+.card-content{
+	float: left;
+	width: 100%;
+	background-color: white;
+	margin:0px;
+	padding: 15px;
+	border-radius: 0px 0px 10px 10px;
+}
+.card-image{
+	width: 100%;
+	border:0px;
+	padding:0px;
+	margin:0px;
+	border-radius: 10px 10px 0px 0px;
+	float: left;	
+}
+/* ---- grid ---- */
+
+.grid {
+  background: none;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+.grid-item {
+  height: auto;
+  float: left;
+  /*background: #D26;
+  border: 2px solid #333;*/
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+.grid-item-right {
+  height: auto;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+.login {
+	width: 50%;
+	background-color:white;
+	border: 0;
+	text-align: center;
+	border-radius: 10px;
+	margin: auto;
+	padding: 50px 0px;
+}
+.login p{
+	background-color:none;
+	margin: 10px 0px;
+}
+.login input{
+	height: 40px;
+	width: 70%;
+	border: 3px solid #ccc;
+ -webkit-transition: 0.5s;
+ transition: 0.5s;
+ outline: none;
+	padding-left: 20px;
+}
+.login input:focus {
+  border: 3px solid #555;
+}
+.login i{
+	background-color: none;
+	vertical-align: middle;
+	font-size: 40px;
+}
+.button {
+padding: 8px 25px;
+background-color: white;
+border: solid #D0D0D0 3px;
+text-transform: uppercase;
+color: #5D6C89;
+font-weight: bolder;
+font-size: 1em;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+.button:hover{
+	background-color: #D0D0D0;
+	color:black;
+	
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+		opacity: .8;
+		z-index: 1;
+}
+.title-right{
+	line-height: 40px; 
+	background-color: #c0b281; 
+	color:white;
+	padding: 0px 15px;
+	border-radius: 10px 10px 0px 0px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+.card-content h3{
+	margin-bottom: 5px;
+	color: #5A4A42;
+}
+.card-content p{
+	line-height: 1.4em;
+}
+.read-more{
+	text-align: right;
+	padding: 5px;
+}
+.read-more a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 15px;
+	border: solid #D0D0D0 2px;
+	color: #5D6C89;
+	text-transform: uppercase;
+	font-size: .8em;
+	font-weight: bold;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.read-more a:hover{
+	background-color: #D0D0D0;
+	color:black;
+}
+.post-image{
+	width: 70%;
+	border:0px;
+	padding:0px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+.comment-content{
+	float: left;
+	width: 100%;
+	background-color: white;
+	margin:0px;
+	padding: 15px;
+	border-radius: 10px;
+}
+.add-comment textarea{
+	width: 100%;
+	height: 100px;
+	resize: none;
+}
+.comment-content h4{
+margin-bottom: 10px;
+	
+}
+.comment-content p{
+margin-bottom: 10px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1300px) {
+	.main{width: 90%;}
+}
+@media screen and (max-width:1160px) {
+	.main{width: 95%;}
+}
+@media screen and (max-width:1024px) {
+	.right-side {display: none;}
+	.left-side{width: 100%;}
+}
+@media screen and (max-width:884px) {
+	.main{width: 100%;}
+	.login{width: 90%;}
+	.nav-left{ display: none; }
+	.nav-icon a{ display: inline;}
+}
+@media screen and (max-width:550px) {
+	.grid-sizer,.grid-item { width: 100%; }
+}
+
+
+
+
+
+
+
+
+
+
+
